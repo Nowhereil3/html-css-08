@@ -1,5 +1,6 @@
 /* X-Small devices (portrait phones, less than 576px) */
 /* No media query for `xs` since this is the default in Bootstrap */
+.container-xl,
 .container,
 .container-fluid {
   --column-size: 12;
@@ -570,8 +571,9 @@
 
 /* X-Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-  .container {
+  .container-xl {
     max-width: 1170px;
+    --spacer: 30px;
   }
 
   .g-xl-0 {
@@ -703,6 +705,7 @@
 @media (min-width: 1400px) {
   .container {
     max-width: 1330px;
+    --spacer: 30px;
   }
 
   .g-xxl-0 {
